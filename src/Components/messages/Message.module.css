@@ -1,0 +1,22 @@
+.messageinput input {
+  padding: 11px 32px 10px 8px;
+  width: 85%;
+  margin-left: 5px;
+}
+
+.messageinput{
+    display: flex;
+    justify-content: flex-start;
+    background-color: grey;
+    height: 7%;
+}
+.messageinput img{
+    width: 7%;
+}
+.messageinput .submit{
+    width:8%
+}
+.messageinput .submit img{
+    height: 30px;
+    width: 30px;
+}
