@@ -20,7 +20,7 @@ export default function ClientBtn(props) {
         </div>
         <div>
             <p><strong>{props.name}</strong></p>
-            <p>{props.lastmsg}</p>
+            <p>{props.lastmsg}12121</p>
         </div>
     </div>
   )
