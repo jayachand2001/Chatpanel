@@ -50,6 +50,7 @@ const userData = {
 }
 
 
+
 const UserSlice = createSlice({
     name: "userslice123",
     initialState: userData,
@@ -68,10 +69,17 @@ const UserSlice = createSlice({
             })
             state.activeUser = user[0];
 
+        },
+        getUserNo: function(state, action){
+            return state.userList.length;
+        },
+
+        updateUserList: function(state, action){
+            state.userList = [...state.userList, action.payload]
         }
     }
 })
 
-export const {getactiveuser, getuserList, setActiveUser} = UserSlice.actions;
+export const {getactiveuser, getuserList, setActiveUser, getUserNo, updateUserList} = UserSlice.actions;
 
 export default UserSlice;
