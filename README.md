@@ -1,12 +1,12 @@
 List of events 
 
-user geenrated event
+user generated event
 
 1. user added to the system
 2. user logout
 3. user sends a message
 4. user start typing
-5. user network is low
+5. user network is low - low priority
 
 bot generated event
 1. bot sends reply

@@ -10,6 +10,11 @@
   justify-content: flex-start;
   color: white;
 }
+.counter{
+  font-weight: 400;
+  background-color: red;
+  width: fit-content;
+}
 .contactstatusonline {
   display: flex;
   position: absolute;

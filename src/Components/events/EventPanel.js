@@ -22,9 +22,14 @@ function EventPanel() {
 
     dispatch(updateUserList(user))
   }
-
+const clickHandlerTyping = () => {
+    
+}
   return (
+      <>
     <div><button onClick={clickHandler}>Add New user</button></div>
+    <div><button onClick={clickHandlerTyping}>set user typing</button></div>
+    </>
   )
 }
 

@@ -18,6 +18,11 @@ export default function ClientBtn(props) {
     dispatch(setActiveUser(props.name))
   }
   const [online, setOnline] = useState(true)
+  let [count,setCounter] = useState(0)
+
+  const  increaseCounter = () => {
+    setCounter(count++)
+  }
 
   return (
     <div className={classes.container} onClick={clickHandler}>
@@ -27,7 +32,7 @@ export default function ClientBtn(props) {
         </div>
         <div>
             <p><strong>{props.name}</strong></p>
-            <p>{props.lastmsg}</p>
+            <span><p>{props.lastmsg}</p><p className={classes.counter} onClick={increaseCounter}>{count}</p></span>
           
         </div>
     </div>
